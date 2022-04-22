@@ -99,7 +99,7 @@ h3,
 
 h1,
 .h1 {
-  font-size: 2.3rem;
+  font-size: 2.35rem;
 }
 
 p {
@@ -166,10 +166,15 @@ p {
 }
 
 .header {
+  padding-bottom: 95px;
   text-align: center;
 }
-.header_text > * + * {
-  margin-top: 1rem;
+.header_text {
+  position: relative;
+  margin-top: 1.55rem;
+}
+.header_text p {
+  margin: 0.5rem 0 2.5rem;
 }
 .header::before {
   content: "";
@@ -179,8 +184,7 @@ p {
   width: 100%;
   height: 50%;
   z-index: -2;
-  outline: 1px solid red;
-  background-image: url(../../images/bg-tablet-pattern.svg);
+  background-image: url(../images/bg-tablet-pattern.svg);
   background-position: 15vw bottom;
   background-size: 120%;
   background-repeat: no-repeat;

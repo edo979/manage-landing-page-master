@@ -1,9 +1,14 @@
 .header {
+  padding-bottom: 95px; // for second bg img
   text-align: center;
 
   &_text {
-    > * + * {
-      margin-top: 1rem;
+    position: relative;
+
+    margin-top: 1.55rem;
+
+    p {
+      margin: 0.5rem 0 2.5rem;
     }
   }
 
@@ -16,9 +21,7 @@
     height: 50%;
     z-index: -2;
 
-    outline: 1px solid red;
-
-    background-image: url(../../images/bg-tablet-pattern.svg);
+    background-image: url(../images/bg-tablet-pattern.svg);
     background-position: 15vw bottom;
     background-size: 120%;
     background-repeat: no-repeat;
