@@ -13,3 +13,22 @@ html {
 body {
   font-family: 'Be Vietnam Pro', sans-serif;
 }
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  color: $Dark-Blue;
+  line-height: 1.3;
+}
+
+h1,
+.h1 {
+  font-size: 2.3rem;
+}
+
+p {
+  color: $Dark-Grayish-Blue;
+}
