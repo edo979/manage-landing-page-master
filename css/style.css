@@ -119,6 +119,9 @@ p {
   border: none;
   background-color: transparent;
 }
+.nav_logo {
+  width: 110px;
+}
 .nav_list {
   margin: 0;
   padding: 0;
@@ -189,7 +192,7 @@ p {
 }
 
 .nav {
-  margin-top: 40px;
+  margin-top: 35px;
 }
 
 .header {
