@@ -87,4 +87,69 @@ body {
   font-family: "Be Vietnam Pro", sans-serif;
 }
 
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav_close, .nav_list,
+.nav .btn {
+  display: none;
+}
+.nav_open, .nav_close {
+  border: none;
+  background-color: transparent;
+}
+.nav_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav.colapsed::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+}
+.nav.colapsed .nav_close,
+.nav.colapsed .nav_list {
+  display: block;
+}
+.nav.colapsed .nav_open {
+  display: none;
+}
+.nav.colapsed .nav_close,
+.nav.colapsed .nav_logo {
+  position: relative;
+  z-index: 2;
+}
+.nav.colapsed .nav_list {
+  position: absolute;
+  top: 90px;
+  left: 5%;
+  width: 90%;
+  z-index: 2;
+  padding: 40px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: white;
+}
+.nav.colapsed .nav_list > li + li {
+  margin-top: 1rem;
+}
+
+.container {
+  width: max(325px, 82vw);
+  margin-inline: auto;
+}
+
+.nav {
+  margin-top: 40px;
+}
+
 /*# sourceMappingURL=style.css.map */
