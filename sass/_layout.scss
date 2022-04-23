@@ -1,6 +1,7 @@
 @import 'components/components';
 
-.container {
+.container,
+.testimonials {
   width: max(325px, 82vw);
   margin-inline: auto;
 }

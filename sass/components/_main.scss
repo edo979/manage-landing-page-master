@@ -47,7 +47,48 @@
 
 .testimonials {
   text-align: center;
+  outline: 1px solid red;
 }
 
 .testimonial {
+  outline: 1px solid blue;
+  img {
+    width: 72px;
+    margin-inline: auto;
+  }
+
+  figcaption {
+    margin: 1.25rem 0;
+
+    color: $Dark-Blue;
+    font-weight: 600;
+    font-size: var(--fs-400);
+  }
+}
+
+.slider {
+  overflow: hidden;
+
+  &_slides {
+    display: flex;
+    align-items: start;
+    width: 100%;
+  }
+
+  &_slide {
+    flex: 1 0 100%;
+  }
+
+  &_button {
+    margin: 0;
+    padding: 3px;
+    border: 1px solid $Bright-Red;
+    border-radius: 50%;
+
+    background-color: transparent;
+
+    &.active {
+      background-color: $Bright-Red;
+    }
+  }
 }
