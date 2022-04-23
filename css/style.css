@@ -77,7 +77,7 @@ select {
   --fs-200: 0.75rem;
   --fs-300: 0.8rem;
   --fs-400: 0.89rem;
-  --fs-500: 1.05rem;
+  --fs-500: 1rem;
 }
 
 html {
@@ -115,6 +115,8 @@ h3,
 }
 
 p {
+  font-size: var(--fs-400);
+  line-height: 1.8;
   color: #9095a7;
 }
 
@@ -186,6 +188,7 @@ p {
   margin-top: 1.55rem;
 }
 .header_text p {
+  font-size: var(--fs-500);
   margin: 0.5rem 0 2.5rem;
 }
 .header::before {
@@ -202,10 +205,6 @@ p {
   background-repeat: no-repeat;
 }
 
-.boxes {
-  font-size: var(--fs-400);
-  line-height: 1.8;
-}
 .boxes_text {
   text-align: center;
 }
@@ -242,6 +241,10 @@ p {
   font-weight: 600;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: #f25f3a;
+}
+
+.testimonials {
+  text-align: center;
 }
 
 .btn {

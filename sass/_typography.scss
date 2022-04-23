@@ -4,7 +4,7 @@
   --fs-200: 0.75rem;
   --fs-300: 0.8rem;
   --fs-400: 0.89rem;
-  --fs-500: 1.05rem;
+  --fs-500: 1rem;
 }
 
 html {
@@ -40,5 +40,7 @@ h3,
 }
 
 p {
+  font-size: var(--fs-400);
+  line-height: 1.8;
   color: $Dark-Grayish-Blue;
 }
