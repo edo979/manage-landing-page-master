@@ -289,6 +289,23 @@ p {
   background-color: #f25f3a;
 }
 
+.cta {
+  padding-block: 6rem;
+  text-align: center;
+  background-color: #f25f3a;
+  background-image: url(../images/bg-simplify-section-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+.cta h2 {
+  font-size: 2.3rem;
+  line-height: 1.4;
+  color: #fafafa;
+}
+.cta .btn {
+  margin-top: 1.5rem;
+}
+
 .btn {
   padding: 1rem 2rem;
   border: none;
@@ -302,6 +319,11 @@ p {
   background-color: #f25f3a;
   color: #fafafa;
   box-shadow: 0 10px 15px -3px rgba(242, 95, 58, 0.5);
+}
+
+.btn-secondary {
+  color: #f25f3a;
+  font-weight: 700;
 }
 
 .container,
@@ -325,6 +347,10 @@ p {
 
 .testimonials {
   margin-top: 4rem;
+}
+
+.cta {
+  margin-top: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -102,3 +102,23 @@
     }
   }
 }
+
+.cta {
+  padding-block: 6rem;
+  text-align: center;
+
+  background-color: $Bright-Red;
+  background-image: url(../images/bg-simplify-section-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+
+  h2 {
+    font-size: 2.3rem;
+    line-height: 1.4;
+    color: $Very-Light-Gray;
+  }
+
+  .btn {
+    margin-top: 1.5rem;
+  }
+}
