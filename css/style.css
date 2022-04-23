@@ -245,24 +245,27 @@ p {
 
 .testimonials {
   text-align: center;
-  outline: 1px solid red;
+}
+.testimonials .btn-primary {
+  margin-top: 3rem;
 }
 
-.testimonial {
-  outline: 1px solid blue;
-}
 .testimonial img {
   width: 72px;
   margin-inline: auto;
 }
 .testimonial figcaption {
-  margin: 1.25rem 0;
+  margin: 1.5rem 0;
   color: #242d52;
   font-weight: 600;
   font-size: var(--fs-400);
 }
+.testimonial p {
+  padding-inline: 10px;
+}
 
 .slider {
+  margin-top: 4rem;
   overflow: hidden;
 }
 .slider_slides {
@@ -275,7 +278,7 @@ p {
   width: 100%;
 }
 .slider_button {
-  margin: 0;
+  margin-top: 4rem;
   padding: 3px;
   border: 1px solid #f25f3a;
   border-radius: 50%;
@@ -317,6 +320,10 @@ p {
 
 .header {
   margin-top: 45px;
+}
+
+.testimonials {
+  margin-top: 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
