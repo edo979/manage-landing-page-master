@@ -306,6 +306,10 @@ p {
   margin-top: 1.5rem;
 }
 
+.footer {
+  background-color: #1d1e25;
+}
+
 .btn {
   padding: 1rem 2rem;
   border: none;
