@@ -197,8 +197,8 @@ p {
   height: 810px;
   z-index: -2;
   background-image: url(../images/bg-tablet-pattern.svg), url(../images/bg-tablet-pattern.svg);
-  background-position: 80px -80px, 250px bottom;
-  background-size: 120%, 88%;
+  background-position: 50px -100px, 250px bottom;
+  background-size: 115%, 88%;
   background-repeat: no-repeat;
 }
 
@@ -228,15 +228,15 @@ p {
   right: 0;
   height: 100%;
   z-index: -1;
-  background-color: rgba(242, 95, 58, 0.15);
+  background-color: rgba(242, 95, 58, 0.12);
 }
 .boxes_box p {
-  margin-top: 0.75rem;
+  margin-top: 0.8rem;
   padding-inline-end: 1rem;
 }
 
 .pill {
-  padding: 0.4rem 1.5rem;
+  padding: 0.45rem 1.55rem;
   border-radius: 20px;
   color: #fafafa;
   font-weight: 600;

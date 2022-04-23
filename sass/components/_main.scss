@@ -26,19 +26,19 @@
         height: 100%;
         z-index: -1;
 
-        background-color: rgba($color: $Bright-Red, $alpha: 0.15);
+        background-color: rgba($color: $Bright-Red, $alpha: 0.12);
       }
     }
 
     p {
-      margin-top: 0.75rem;
+      margin-top: 0.8rem;
       padding-inline-end: 1rem;
     }
   }
 }
 
 .pill {
-  padding: 0.4rem 1.5rem;
+  padding: 0.45rem 1.55rem;
   border-radius: 20px;
 
   color: $Very-Light-Gray;
