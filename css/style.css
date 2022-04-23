@@ -272,6 +272,7 @@ p {
 }
 .slider_slide {
   flex: 1 0 100%;
+  width: 100%;
 }
 .slider_button {
   margin: 0;
