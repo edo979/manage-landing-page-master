@@ -76,7 +76,7 @@ select {
 :root {
   --fs-200: 0.75rem;
   --fs-300: 0.8rem;
-  --fs-400: 0.9rem;
+  --fs-400: 0.89rem;
   --fs-500: 1.05rem;
 }
 
@@ -101,6 +101,17 @@ h3,
 h1,
 .h1 {
   font-size: 2.35rem;
+}
+
+h2,
+.h2 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+h3,
+.h3 {
+  font-size: 0.97rem;
 }
 
 p {
@@ -191,6 +202,48 @@ p {
   background-repeat: no-repeat;
 }
 
+.boxes {
+  font-size: var(--fs-400);
+  line-height: 1.8;
+}
+.boxes_text {
+  text-align: center;
+}
+.boxes_text p {
+  margin-top: 1rem;
+}
+.boxes_box {
+  margin-top: 3rem;
+  padding-inline-start: 1rem;
+}
+.boxes_box .flex {
+  position: relative;
+  gap: 1rem;
+}
+.boxes_box .flex::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50px;
+  right: 0;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(242, 95, 58, 0.15);
+}
+.boxes_box p {
+  margin-top: 0.75rem;
+  padding-inline-end: 1rem;
+}
+
+.pill {
+  padding: 0.4rem 1.5rem;
+  border-radius: 20px;
+  color: #fafafa;
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #f25f3a;
+}
+
 .btn {
   padding: 1rem 2rem;
   border: none;
@@ -209,6 +262,11 @@ p {
 .container {
   width: max(325px, 82vw);
   margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
 }
 
 .nav {
