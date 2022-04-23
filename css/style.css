@@ -74,6 +74,7 @@ select {
   }
 }
 :root {
+  --fs-200: 0.75rem;
   --fs-300: 0.8rem;
   --fs-400: 0.9rem;
   --fs-500: 1.05rem;
@@ -188,6 +189,21 @@ p {
   background-position: 80px -80px, 250px bottom;
   background-size: 120%, 88%;
   background-repeat: no-repeat;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 25px;
+  font-size: var(--fs-200);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.btn-primary {
+  background-color: #f25f3a;
+  color: #fafafa;
+  box-shadow: 0 10px 15px -3px rgba(242, 95, 58, 0.5);
 }
 
 .container {
