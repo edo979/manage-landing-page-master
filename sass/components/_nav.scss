@@ -30,6 +30,8 @@
   &_link {
     cursor: pointer;
 
+    color: $Dark-Blue;
+
     &:focus,
     &:hover {
       color: $Dark-Grayish-Blue;
