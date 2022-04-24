@@ -8,13 +8,15 @@
   }
 
   form {
+    position: relative;
+
     grid-column: 1 / 13;
     gap: 0.5rem;
 
     input {
       flex: 1;
 
-      padding: 0.85rem 2rem;
+      padding: 0.85rem 1rem;
       border: none;
       border-radius: 20px;
 
@@ -23,6 +25,28 @@
     }
     .btn {
       box-shadow: none;
+    }
+
+    .error {
+      display: none;
+    }
+
+    &.invalid {
+      input {
+        border: 1px solid red;
+        color: red;
+      }
+
+      .error {
+        display: block;
+        position: absolute;
+        left: 1rem;
+        bottom: -1.75rem;
+
+        font-size: var(--fs-300);
+        font-style: italic;
+        color: red;
+      }
     }
   }
 

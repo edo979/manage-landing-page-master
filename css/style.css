@@ -322,12 +322,13 @@ p {
   row-gap: 3.1rem;
 }
 .footer form {
+  position: relative;
   grid-column: 1/13;
   gap: 0.5rem;
 }
 .footer form input {
   flex: 1;
-  padding: 0.85rem 2rem;
+  padding: 0.85rem 1rem;
   border: none;
   border-radius: 20px;
   font-size: var(--fs-300);
@@ -335,6 +336,22 @@ p {
 }
 .footer form .btn {
   box-shadow: none;
+}
+.footer form .error {
+  display: none;
+}
+.footer form.invalid input {
+  border: 1px solid red;
+  color: red;
+}
+.footer form.invalid .error {
+  display: block;
+  position: absolute;
+  left: 1rem;
+  bottom: -1.75rem;
+  font-size: var(--fs-300);
+  font-style: italic;
+  color: red;
 }
 .footer #nav-left {
   grid-column: 1/7;

@@ -3,7 +3,10 @@ const slidesEl = document.querySelectorAll('.slider_slide'),
   slidesContainerEl = document.getElementById('slides-container'),
   navEl = document.getElementById('nav-container'),
   navOpenEl = document.getElementById('nav-open'),
-  navCloseEl = document.getElementById('nav-close')
+  navCloseEl = document.getElementById('nav-close'),
+  emailBtn = document.getElementById('submitt-email'),
+  emailEl = document.getElementById('email'),
+  formEl = document.getElementById('email-form')
 
 // NAVIGATION:
 
@@ -57,3 +60,20 @@ function gotoSlide(slideNum) {
 
   intervalId = startSlideShow()
 }
+
+// EMAIL VALIDATION:
+emailBtn.addEventListener('click', (e) => {
+  e.preventDefault()
+
+  const email = emailEl.value,
+    re =
+      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+  if (email && re.test(email)) {
+    // call function if email valid
+  } else {
+    formEl.classList.add('invalid')
+
+    setTimeout(() => formEl.classList.remove('invalid'), 5 * 1000)
+  }
+})

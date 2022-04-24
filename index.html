@@ -183,14 +183,15 @@
 
     <footer class="footer">
       <div class="grid-container">
-        <form class="flex">
+        <form class="flex" id="email-form">
           <input
             type="email"
             name="email"
             id="email"
             placeholder="Updates in your inbox…"
           />
-          <div class="btn btn-primary">GO</div>
+          <p class="error">Please insert a valid email!</p>
+          <button class="btn btn-primary" id="submitt-email">GO</button>
         </form>
 
         <ul class="footer_nav" id="nav-left">
