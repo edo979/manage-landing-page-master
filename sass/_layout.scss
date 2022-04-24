@@ -1,7 +1,8 @@
 @import 'components/components';
 
 .container,
-.testimonials {
+.testimonials,
+.grid-container {
   width: max(325px, 82vw);
   margin-inline: auto;
 }
@@ -9,6 +10,11 @@
 .flex {
   display: flex;
   align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 
 .nav {
