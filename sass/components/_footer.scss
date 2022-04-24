@@ -4,7 +4,7 @@
   background-color: $Very-Dark-Blue;
 
   .grid-container {
-    row-gap: 3rem;
+    row-gap: 3.1rem;
   }
 
   form {
@@ -48,18 +48,21 @@
     justify-content: space-evenly;
 
     &_link {
+      height: 32px;
       svg {
         width: 32px;
-        height: 32px;
       }
     }
   }
 
   &_logo {
     grid-column: 1 / 13;
+    transform: scale(1.1);
   }
   &_copyright {
     grid-column: 1 / 13;
+
+    font-size: var(--fs-300);
   }
 
   &_nav {
@@ -72,7 +75,11 @@
     font-size: var(--fs-400);
 
     > li + li {
-      margin-top: 1rem;
+      margin-top: 1.1rem;
     }
   }
+}
+
+.attribution {
+  color: $Dark-Grayish-Blue;
 }

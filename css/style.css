@@ -311,7 +311,7 @@ p {
   background-color: #1d1e25;
 }
 .footer .grid-container {
-  row-gap: 3rem;
+  row-gap: 3.1rem;
 }
 .footer form {
   grid-column: 1/13;
@@ -344,15 +344,19 @@ p {
   width: 100%;
   justify-content: space-evenly;
 }
+.footer .social_link {
+  height: 32px;
+}
 .footer .social_link svg {
   width: 32px;
-  height: 32px;
 }
 .footer_logo {
   grid-column: 1/13;
+  transform: scale(1.1);
 }
 .footer_copyright {
   grid-column: 1/13;
+  font-size: var(--fs-300);
 }
 .footer_nav {
   margin: 0;
@@ -362,7 +366,11 @@ p {
   font-size: var(--fs-400);
 }
 .footer_nav > li + li {
-  margin-top: 1rem;
+  margin-top: 1.1rem;
+}
+
+.attribution {
+  color: #9095a7;
 }
 
 .btn {
