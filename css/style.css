@@ -132,6 +132,7 @@ p {
 .nav_open, .nav_close {
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 .nav_logo {
   width: 110px;

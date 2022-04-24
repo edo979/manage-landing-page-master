@@ -1,6 +1,17 @@
 const slidesEl = document.querySelectorAll('.slider_slide'),
   sliderBtnEls = document.querySelectorAll('.slider_button'),
-  slidesContainerEl = document.getElementById('slides-container')
+  slidesContainerEl = document.getElementById('slides-container'),
+  navEl = document.getElementById('nav-container'),
+  navOpenEl = document.getElementById('nav-open'),
+  navCloseEl = document.getElementById('nav-close')
+
+// NAVIGATION:
+
+navOpenEl.addEventListener('click', (e) => navEl.classList.add('colapsed'))
+
+navCloseEl.addEventListener('click', (e) => navEl.classList.remove('colapsed'))
+
+// SLIDER:
 
 let currentSlide = 0
 setSlideNavigation()
