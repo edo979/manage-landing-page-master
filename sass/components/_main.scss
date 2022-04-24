@@ -97,6 +97,8 @@
 
     background-color: transparent;
 
+    cursor: pointer;
+
     &.active {
       background-color: $Bright-Red;
     }

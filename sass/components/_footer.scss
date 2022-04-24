@@ -43,16 +43,6 @@
 
   .social {
     grid-column: 1 / 13;
-
-    width: 100%;
-    justify-content: space-evenly;
-
-    &_link {
-      height: 32px;
-      svg {
-        width: 32px;
-      }
-    }
   }
 
   &_logo {
@@ -76,6 +66,35 @@
 
     > li + li {
       margin-top: 1.1rem;
+    }
+  }
+
+  &_link {
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: $Bright-Red;
+    }
+  }
+}
+
+.social {
+  width: 100%;
+  justify-content: space-evenly;
+
+  &_link {
+    height: 32px;
+
+    svg {
+      width: 32px;
+    }
+
+    &:hover,
+    &:focus {
+      svg path {
+        fill: $Bright-Red;
+      }
     }
   }
 }

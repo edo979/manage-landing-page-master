@@ -26,6 +26,15 @@
 
     list-style: none;
   }
+
+  &_link {
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      color: $Dark-Grayish-Blue;
+    }
+  }
 }
 
 .nav.colapsed {
@@ -69,7 +78,7 @@
     background-color: white;
 
     > li + li {
-      margin-top: 1rem;
+      margin-top: 1.5rem;
     }
   }
 }

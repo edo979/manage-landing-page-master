@@ -142,6 +142,12 @@ p {
   padding: 0;
   list-style: none;
 }
+.nav_link {
+  cursor: pointer;
+}
+.nav_link:focus, .nav_link:hover {
+  color: #9095a7;
+}
 
 .nav.colapsed::after {
   content: "";
@@ -177,7 +183,7 @@ p {
   background-color: white;
 }
 .nav.colapsed .nav_list > li + li {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .header {
@@ -285,6 +291,7 @@ p {
   border: 1px solid #f25f3a;
   border-radius: 50%;
   background-color: transparent;
+  cursor: pointer;
 }
 .slider_button.active {
   background-color: #f25f3a;
@@ -342,14 +349,6 @@ p {
 }
 .footer .social {
   grid-column: 1/13;
-  width: 100%;
-  justify-content: space-evenly;
-}
-.footer .social_link {
-  height: 32px;
-}
-.footer .social_link svg {
-  width: 32px;
 }
 .footer_logo {
   grid-column: 1/13;
@@ -369,6 +368,26 @@ p {
 .footer_nav > li + li {
   margin-top: 1.1rem;
 }
+.footer_link {
+  cursor: pointer;
+}
+.footer_link:hover, .footer_link:focus {
+  color: #f25f3a;
+}
+
+.social {
+  width: 100%;
+  justify-content: space-evenly;
+}
+.social_link {
+  height: 32px;
+}
+.social_link svg {
+  width: 32px;
+}
+.social_link:hover svg path, .social_link:focus svg path {
+  fill: #f25f3a;
+}
 
 .attribution {
   color: #9095a7;
@@ -381,6 +400,7 @@ p {
   font-size: var(--fs-200);
   font-weight: 500;
   line-height: 1;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -388,10 +408,16 @@ p {
   color: #fafafa;
   box-shadow: 0 10px 15px -3px rgba(242, 95, 58, 0.5);
 }
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #f79e87;
+}
 
 .btn-secondary {
   color: #f25f3a;
   font-weight: 700;
+}
+.btn-secondary:hover, .btn-secondary:focus {
+  color: #f79e87;
 }
 
 .container,
