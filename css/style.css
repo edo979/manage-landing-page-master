@@ -533,6 +533,31 @@ p {
   .header {
     text-align: left;
   }
+  .header::before {
+    background-image: url(../images/bg-tablet-pattern.svg);
+    background-position: 50vw -100px;
+  }
+
+  .main {
+    position: relative;
+  }
+  .main::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 25%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(../images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+
+  .cta {
+    background-image: url(../images/bg-simplify-section-desktop.svg);
+    background-size: cover;
+  }
 
   .footer_logo {
     grid-column: 1/4;
