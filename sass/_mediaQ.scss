@@ -103,7 +103,7 @@
 
       background-image: url(../images/bg-tablet-pattern.svg);
       background-repeat: no-repeat;
-      background-position: right center;
+      background-position: right 300px;
     }
   }
 
@@ -221,7 +221,7 @@
 
   h1,
   .h1 {
-    font-size: 3rem;
+    font-size: 3.1rem;
   }
   h2,
   .h2 {
@@ -238,6 +238,14 @@
   }
 
   .header {
+    margin-top: 6.5rem;
+  }
+
+  .main {
+    margin-top: 1.3rem;
+  }
+
+  .testimonials {
     margin-top: 6rem;
   }
 
@@ -257,8 +265,20 @@
     }
   }
 
+  .header {
+    p {
+      margin: 2rem 0 1.5rem;
+    }
+  }
+
   .boxes {
     position: relative;
+
+    &_text {
+      p {
+        padding-inline-end: 8rem;
+      }
+    }
 
     &_box {
       .flex {

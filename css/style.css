@@ -572,7 +572,7 @@ p {
     z-index: -1;
     background-image: url(../images/bg-tablet-pattern.svg);
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: right 300px;
   }
 
   .boxes_text {
@@ -666,7 +666,7 @@ p {
 
   h1,
 .h1 {
-    font-size: 3rem;
+    font-size: 3.1rem;
   }
 
   h2,
@@ -682,6 +682,14 @@ p {
   }
 
   .header {
+    margin-top: 6.5rem;
+  }
+
+  .main {
+    margin-top: 1.3rem;
+  }
+
+  .testimonials {
     margin-top: 6rem;
   }
 
@@ -696,8 +704,15 @@ p {
     font-size: var(--fs-300);
   }
 
+  .header p {
+    margin: 2rem 0 1.5rem;
+  }
+
   .boxes {
     position: relative;
+  }
+  .boxes_text p {
+    padding-inline-end: 8rem;
   }
   .boxes_box .flex::after {
     display: none;
