@@ -237,7 +237,7 @@ p {
   right: 0;
   height: 100%;
   z-index: -1;
-  background-color: rgba(242, 95, 58, 0.12);
+  background-color: #ffefeb;
 }
 .boxes_box p {
   margin-top: 0.8rem;
@@ -438,6 +438,7 @@ p {
 .btn-secondary {
   color: #f25f3a;
   font-weight: 700;
+  background-color: #fafafa;
 }
 .btn-secondary:hover, .btn-secondary:focus {
   color: #f79e87;
