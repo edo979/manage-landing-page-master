@@ -98,7 +98,30 @@
 
   .slider {
     &_slide {
+      position: relative;
       flex: 1 0 33.33%;
+      align-self: stretch;
+
+      padding: 2rem;
+
+      & + & {
+        margin-inline-start: 1rem;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 70px;
+        bottom: 0;
+        background-color: $Very-Light-Gray;
+        z-index: -1;
+      }
+
+      p {
+        font-size: var(--fs-300);
+      }
     }
   }
 

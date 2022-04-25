@@ -567,7 +567,26 @@ p {
   }
 
   .slider_slide {
+    position: relative;
     flex: 1 0 33.33%;
+    align-self: stretch;
+    padding: 2rem;
+  }
+  .slider_slide + .slider_slide {
+    margin-inline-start: 1rem;
+  }
+  .slider_slide::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 70px;
+    bottom: 0;
+    background-color: #fafafa;
+    z-index: -1;
+  }
+  .slider_slide p {
+    font-size: var(--fs-300);
   }
 
   .footer_logo {
