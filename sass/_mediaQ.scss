@@ -13,6 +13,10 @@
     width: 90vw;
   }
 
+  .testimonials {
+    width: 100%;
+  }
+
   .md\:grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -90,6 +94,12 @@
   .cta {
     background-image: url(../images/bg-simplify-section-desktop.svg);
     background-size: cover;
+  }
+
+  .slider {
+    &_slide {
+      flex: 1 0 33.33%;
+    }
   }
 
   .footer {

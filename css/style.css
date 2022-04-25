@@ -296,6 +296,9 @@ p {
   background-color: transparent;
   cursor: pointer;
 }
+.slider_button + .slider_button {
+  margin-left: 5px;
+}
 .slider_button.active {
   background-color: #f25f3a;
 }
@@ -491,6 +494,10 @@ p {
     width: 90vw;
   }
 
+  .testimonials {
+    width: 100%;
+  }
+
   .md\:grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -557,6 +564,10 @@ p {
   .cta {
     background-image: url(../images/bg-simplify-section-desktop.svg);
     background-size: cover;
+  }
+
+  .slider_slide {
+    flex: 1 0 33.33%;
   }
 
   .footer_logo {

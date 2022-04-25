@@ -1,5 +1,5 @@
 const slidesEl = document.querySelectorAll('.slider_slide'),
-  sliderBtnEls = document.querySelectorAll('.slider_button'),
+  sliderProgress = document.getElementById('slider-progress'),
   slidesContainerEl = document.getElementById('slides-container'),
   navEl = document.getElementById('nav-container'),
   navOpenEl = document.getElementById('nav-open'),
@@ -16,18 +16,42 @@ navCloseEl.addEventListener('click', (e) => navEl.classList.remove('colapsed'))
 
 // SLIDER:
 
-let currentSlide = 0
-setSlideNavigation()
+let currentSlide = 0,
+  numOfSlides = 0,
+  slideOffset = 0,
+  sliderBtnEls
+
 let intervalId = startSlideShow()
+createSlideNavigationButtons()
+setSlideNavigation()
+
+function createSlideNavigationButtons() {
+  for (let index = 0; index < numOfSlides; index++) {
+    const btn = document.createElement('button')
+    btn.classList.add('slider_button')
+
+    sliderProgress.appendChild(btn)
+  }
+
+  sliderBtnEls = document.querySelectorAll('.slider_button')
+}
 
 function startSlideShow() {
+  const slideWidth = slidesEl[0].offsetWidth,
+    slideContainerWidth = slidesContainerEl.offsetWidth,
+    slidesPerView = parseInt(slideContainerWidth / slideWidth),
+    totalViews = Math.ceil(slidesEl.length / slidesPerView)
+
+  numOfSlides = totalViews
+  slideOffset = slideWidth
+
   return setInterval(() => nextSlide(), 8 * 1000)
 }
 
 function nextSlide() {
   currentSlide++
 
-  if (currentSlide > slidesEl.length - 1) {
+  if (currentSlide > numOfSlides - 1) {
     currentSlide = 0
   }
 
@@ -36,7 +60,9 @@ function nextSlide() {
 }
 
 function showSlide() {
-  slidesContainerEl.style.transform = `translateX(-${currentSlide * 100}%)`
+  slidesContainerEl.style.transform = `translateX(-${
+    currentSlide * slideOffset
+  }px)`
 }
 
 function setSlideNavigation() {
