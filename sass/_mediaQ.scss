@@ -278,6 +278,20 @@
   }
 
   .footer {
+    padding-block: 3.75rem;
+    padding-block-end: 1rem;
+
+    #nav-left {
+      grid-column: 3 / 6;
+    }
+    #nav-right {
+      grid-column: 6 / 9;
+    }
+
+    &_link {
+      font-size: var(--fs-300);
+    }
+
     .social,
     &_logo {
       grid-column: 1 / 3;
